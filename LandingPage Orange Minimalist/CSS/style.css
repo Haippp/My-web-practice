@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    gap: 1rem;
+}
+
+.navbar object {
+    fill: chocolate;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.navbar li a:hover {
+    color: chocolate;
+}
+
+.navbar .btn{
+    background-color: chocolate;
+    padding: .4rem 1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 3rem;
+    padding: 4rem;
+}
+
+article h3 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    line-height: 3.8rem;
+}
+
+article h3 span {
+    color: chocolate;
+}
+
+article p{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+article a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+article .btn {
+    background-color: chocolate;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.5rem;
+}
+
+.main-container img{
+    width: 650px;
+    margin: 0 2rem;
+}
