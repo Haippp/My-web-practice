@@ -35,6 +35,11 @@ body {
   margin: 25px 25px 35px;
 }
 
+.content .typing-input{
+  z-index: -999;
+  position: absolute;
+  opacity: 0;
+}
 .content .input {
   display: flex;
   flex-wrap: wrap;
@@ -42,15 +47,17 @@ body {
 }
 
 .input input {
+  color : green;
   width: 55px;
   height: 55px;
   margin: 5px;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   background: none;
   border: solid 2px #efefef;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .input in:first-child {
@@ -66,8 +73,8 @@ body {
   margin-bottom: 10px;
 }
 
-.content .enter-btn {
-  width: 80%;
+.content .reset-btn {
+  width: 100%;
   outline: none;
   border: none;
   font-size: 16px;
@@ -78,19 +85,6 @@ body {
   cursor: pointer;
 }
 
-.reset-btn svg {
-  height: 20px;
+.wrong-letter span{
+  color: red;
 }
-
-.content .reset-btn {
-  width: 15%;
-  outline: none;
-  border: none;
-  font-size: 16px;
-  padding: 15px 0;
-  border-radius: 5px;
-  background-color: red;
-  fill: white;
-  cursor: pointer;
-}
-
