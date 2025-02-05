@@ -11,7 +11,6 @@ function randomWord() {
   let ranObj = wordList[Math.floor(Math.random() * wordList.length)];
   word = ranObj.word; // Menyimpan kata yang dipilih
   maxGuess = 8, incorrects = [], corrects = [];
-  console.log(word);
 
   hints.innerText = ranObj.hint;
   wrongLetter.innerHTML = incorrects;
@@ -27,9 +26,9 @@ function randomWord() {
 randomWord();
 
 function initGame(e) {
-  let key = e.target.value;
+  let text = e.target.value,
+  key = text.toLowerCase();
   if (key.match(/^[A-Za-z]+$/) && !incorrects.includes(` ${key}`) && !corrects.includes(key)) {
-    console.log(key);
     if (word.includes(key)) { //if user letter found in the word
       for (let i = 0; i < word.length; i++) {
         //showing matched letter in the input value

@@ -1,58 +1,58 @@
 const wordList = [
     {
-        word: "Musang",
+        word: "musang",
         hint: "Hewan yang sering dikaitkan dengan Birahi"
     },
     {
-        word: "Pisang",
+        word: "pisang",
         hint: "Kuning tapi bukan yang di sungai"
     },
     {
-        word: "Pulpen",
+        word: "pulpen",
         hint: "Sering digunakan di kelas"
     },
     {
-        word: "Payung",
+        word: "payung",
         hint: "Dipake buat nama sebuah band Teduh"
     },
     {
-        word: "Pantai",
+        word: "pantai",
         hint: "Tempat liburan favorit kebanyakan orang"
     },
     {
-        word: "Gunung",
+        word: "gunung",
         hint: "Healing enaknya????"
     },
     {
-        word: "Bawang",
+        word: "bawang",
         hint: "Sering bikin orang lain nangis"
     },
     {
-        word: "Mantan",
+        word: "mantan",
         hint: "Makhluk paling dibenci:("
     },
     {
-        word: "Hoodie",
+        word: "hoodie",
         hint: "Outfit cowok first date"
     },
     {
-        word: "Ginjal",
+        word: "ginjal",
         hint: "Aset kekayaan yang dimiliki orang"
     },
     {
-        word: "Mangga",
+        word: "mangga",
         hint: "Buah yang sering disebut orang jawa"
     },
     {
-        word: "Kayang",
+        word: "kayang",
         hint: "Kebiasaan kalo gabut"
     },
     {
-        word: "Guling",
+        word: "guling",
         hint: "Teman tidur terbaik"
     },
     {
-        word: "Sendal",
+        word: "sendal",
         hint: "Senjata andalan emak emak"
     },
 ];
