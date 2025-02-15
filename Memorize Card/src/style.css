@@ -3,9 +3,6 @@
 @font-face {
     font-family: 'Bit-font';
     src: url(../font/PlaymegamesReguler-2OOee.ttf);
-    src: url(./sfx/correct-156911.mp3);
-    src: url(./sfx/violin-win-5-185128.mp3);
-    src: url(./sfx/wrong-47985.mp3);
 }
 * {
     padding: 0;
@@ -24,9 +21,9 @@ body{
 }
 
 h1{
+    text-align: center;
     font-family: 'bit-font';
     font-size: 3rem;
-    
 }
 
 .container{
@@ -156,4 +153,42 @@ h1{
 .playground {
     display: grid;
     gap: 15px;
+}
+
+/* On HandPhone */
+@media screen and (max-width : 420px) {
+    h1{
+        font-size: 2.4rem;
+    }
+    
+    .start-game{
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(1, 70px);
+    }
+
+    .start-game .card{
+        font-size: 1rem;
+        user-select: none;
+    }
+    
+    .card{
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .card div{
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+    }
+
+    .playground {
+        display: grid;
+        gap: 10px;
+    }
+
+    .fa-repeat{
+        font-size: 20px;
+    }
 }

@@ -28,10 +28,19 @@ startGameCards.forEach((element) => {
 });
 
 startGameButton.addEventListener("click", (e) => {
+  let Resize = 0;
+  window.addEventListener("resize", () => {
+    if (innerWidth > 420) {
+      Resize = 0;
+    } else {
+      Resize = 20;
+    }
+  });
+
   startGameContainer.style.display = "none";
   playgroundContainer.style.display = "grid";
-  playgroundContainer.style.gridTemplateColumns = `repeat(${column}, 100px)`;
-  playgroundContainer.style.gridTemplateRows = `repeat(${rows}, 100px)`;
+  playgroundContainer.style.gridTemplateColumns = `repeat(${column}, ${100 - Resize}px)`;
+  playgroundContainer.style.gridTemplateRows = `repeat(${rows}, ${100 - Resize}px)`;
 
   createCards();
 });
