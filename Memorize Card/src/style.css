@@ -157,10 +157,18 @@ h1{
 
 /* On HandPhone */
 @media screen and (max-width : 420px) {
+    body {
+        margin: 5px;
+    }
     h1{
         font-size: 2.4rem;
     }
     
+    .container{
+        padding: 12px;
+        box-shadow: 8px 8px 0 0 orange;
+    }
+
     .start-game{
         grid-template-columns: repeat(3, 70px);
         grid-template-rows: repeat(1, 70px);
@@ -185,7 +193,7 @@ h1{
 
     .playground {
         display: grid;
-        gap: 10px;
+        gap: 2px;
     }
 
     .fa-repeat{
