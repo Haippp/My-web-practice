@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Bit-font';
+    src: url(../font/PlaymegamesReguler-2OOee.ttf);
+    src: url(./sfx/correct-156911.mp3);
+    src: url(./sfx/violin-win-5-185128.mp3);
+    src: url(./sfx/wrong-47985.mp3);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: gold;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'bit-font';
+    font-size: 3rem;
+    
+}
+
+.container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 0 0 orange;
+    margin-top: 25px;
+}
+
+.start-game{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(1, 100px);
+}
+
+.start-game .card{
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.card{
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card div{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+    backface-visibility: hidden;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.start-game .card.active div{
+    border: 3px solid orange;
+}
+
+.card .back{
+    transform: rotateY(-180deg);
+}
+
+.start-game .card:hover .front,
+.card.flip .front{
+    transform: rotateY(180deg);
+}
+
+.start-game .card:hover .back,
+.card.flip .back{
+    transform: rotateY(0);
+}
+
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+    
+}
+
+@keyframes shake {
+    0%, 100%{
+        transform: translatex(0px);
+    }
+    20%{
+        transform: translatex(12px);
+    }
+    40%{
+        transform: translatex(-12px);
+    }
+    60%{
+        transform: translatex(8px);
+    }
+    80%{
+        transform: translatex(-8px);
+    }
+}
+
+.card.match{
+    animation: rubberband 1s linear forwards;
+}
+
+@keyframes rubberband {
+    0%{
+        transform: scaleX(1);
+    }
+    40%{
+        transform: scaleX(1.2) scaleY(0.75);
+    }
+    65%{
+        transform: scaleX(0.95) scaleY(1.25);
+    }
+    75%{
+        transform: scaleX(1) scaleY(0.95);
+    }
+    90%{
+        transform: scaleX(1.2) scaleY(0.75);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}                             
+
+.start-game button{
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.start-game button:hover{
+    background-color: orangered;
+}
+
+.fa-repeat{
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.playground {
+    display: grid;
+    gap: 15px;
+}
