@@ -112,6 +112,8 @@ function matchedCard(cardOneValue, cardTwoValue) {
         startGameContainer.style.display = "grid";
         playgroundContainer.style.display = "none";
         faRepeat.style.display = "none";
+        matched = "";
+        return;
       }, 500);
     }
     rightSFX();
